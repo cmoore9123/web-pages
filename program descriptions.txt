@@ -1,0 +1,48 @@
+Languages
+
+R: Computer language with a focus on statistical data analysis.
+	. tidyverse/tidydata
+	.leaflet
+	.sf
+	.shiny
+
+SQL: Structured Query Language. Used to manage relational databases and extract data from them in an efficient manner. Optimal data storage
+ schemas/structures have similarities with the tidyverse concepts. Screenshot of databases demonstrating primary and foreign keys. Example of speed
+increase of dashbaord after correctly indexing fields.
+
+Javascript: Controls interactivity in web pages. Example of some Javascript on page.
+
+HTML: Uses "tags" to create the objects that appear on web page. These objects make up the building blocks of web pages. Tags are structured in a hierarchy
+ using the "DIV" (division) tag.
+
+CSS: Creates rules that are then attached to HTML tags. These rules are used to control the appearance of the tags on the web page. Affecting things such as
+ colour, size and spacing. The CSS code can be imbedded directly into a web page within "STYLE" tags. Or more commonly stored in a seperate file which
+ the web page file will link to, called a CSS stylesheet. This allows the single file to set rules shared across multiple web pages.
+
+PHP: The language used to communicate between a "client" browser and databases within the "server".
+
+Programs
+
+Apache HTTP Web Server: Handles web traffic to server. Processing incoming requests and serving web pages.
+
+Nginx: Web server. Processes requests faster than Apache and provides load balancing. Nginx is used as a "reverse proxy server" for Apache
+ on this site. Meaning incoming traffic traffic to Apache is passed to Nginx within the server to process and serve requests. Passing the results back
+ to Apache to send to the client. This adds an extra layer of security and helps distribute requests efficiently.
+
+Google Analytics: Tracks traffic to web pages. Uses snippets of Javascript code to record data on users and send this to a google analytics account to be stored.
+
+MySQL:
+
+PuTTY:
+
+SSH:
+
+Providers
+
+Digital Ocean: 
+
+Rstudio: Integrated Development Environment (IDE) for the R language. Also known as a GUI (Graphical User Interface). Provides point and click
+ functionality for R, assists in developing in R by putting scripts, outputs, packages, connections and help pages all in one place.
+
+
+
