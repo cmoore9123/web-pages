@@ -1,7 +1,7 @@
 body {
 			margin: 0;
 			font-family: Arial, Helvetica, sans-serif;
-			background-color: #f3f1ff;
+			background-color: #454554;
 		}
 		.header {
 			background-color: #333;
@@ -96,7 +96,7 @@ body {
 			content: '\2212';
 		}
 
-				.main_column {
+		.main_column {
 			width: 85%;
 			background-color: #e6ffff;
 			margin: auto;
