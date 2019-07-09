@@ -100,7 +100,6 @@ body {
 		.tab {
 			overflow: hidden;
 			background-color: #85C5EE;
-			margin-top : 10px;
 		}
 
 		.tab button {
@@ -139,4 +138,5 @@ body {
 			background-color: #e6ffff;
 			margin: auto;
 			height: 100%;
+			margin-top: 2%;
 		}
