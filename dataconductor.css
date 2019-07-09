@@ -1,7 +1,8 @@
 body {
 			margin: 0;
 			font-family: Arial, Helvetica, sans-serif;
-			background-color: #f3f1ff;
+			background-color: #454554;
+			/*background-color: #f3f1ff; */
 		}
 		.header {
 			background-color: #333;
@@ -95,16 +96,11 @@ body {
 			content: '\2212';
 		}
 
-		.paragraph {
-			width: 90%;
-			margin-left: 5%;
-			text-align: left;
-		}
 
 		.tab {
 			overflow: hidden;
 			background-color: #85C5EE;
-			width: 70%;
+			margin-top : 10px;
 		}
 
 		.tab button {
@@ -112,9 +108,9 @@ body {
 			float: left;
 			border: none;
 			cursor: pointer;
-			padding: 14px 16px;
 			transition: 0.3s;
 			font-size: 17px;
+			margin: 5px;
 		}
 
 		.tab button:hover {
@@ -127,14 +123,20 @@ body {
 
 		.tabcontent {
 			display: none;
-			padding: 6px 12px;
 			border-top: none;
-			width: 70%;
+			margin-top: 10px;
+
 		}
 
 		.subtabcontent {
 			display: none;
-			padding: 6px 12px;
 			border-top: none;
-			width: 100%;
+			background-color: white;
+		}
+
+		.main_column {
+			width: 75%;
+			background-color: #e6ffff;
+			margin: auto;
+			height: 100%;
 		}
