@@ -1,13 +1,6 @@
 <HTML>
 <HEAD>
 
-	<script>
-			if (screen.width <= 800) {
-				document.location = "https://dataconductor.co.uk/m-index.html";
-			}
-		
-	</script>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142226942-2"></script>
 <script>
@@ -28,12 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="dataconductor.css">
 
 	</HEAD>
-
-
 	
 	<BODY>
-
-
 		
 			<div class="header" id="myheader">
 				<align_right><a href="resources.html">Resources</a></align_right>				
@@ -45,26 +34,18 @@
 
 			<div class="paragraph" style="padding-bottom: 30px; padding-top: 50px;">
 				
-
+			<!--	<p>This website and eveything contained within is created using open source software available to anyone for free on the internet. 
+				It's hosted by a server in "the cloud" costing $10 per month + VAT to rent.</p> -->
 
 			</div>
 
-
-		<button class="collapsible">World Development Indicators Dashboard</button>
-
-		<div class="collapsible_content">
+		<div >
 			<iframe 
-			src="https://datalair.co.uk/shiny/wdi-dashboard"
+			src="https://datalair.co.uk/shiny/wdi-sql"
 			class="frame">
 			</iframe>
 
 	</div>
-
-		<button class="collapsible">Google Analytics for this site</button>
-
-		<div class="collapsible_content">
-			<p> web tracking dashboard here </p>
-		</div>
 
 	<script>
 		
@@ -78,19 +59,7 @@
 			header.classList.remove("sticky");
 		};
 	};
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-	for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-			this.classList.toggle("active_dropdown");
-			var content = this.nextElementSibling;
-			if (content.style.display === "block") {
-				content.style.display = "none";
-			} else {
-				content.style.display = "block";
-			}
-		});
-	} 
+
 	</script>
 
 	</BODY>

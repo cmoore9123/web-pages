@@ -28,6 +28,121 @@
 				
 			</div>
 
+	<div class="tab">
+
+		<button class="tablinks" onclick="open_main(event, 'overview')">Overview</button>
+		
+		<button class="tablinks" onclick="open_main(event, 'languages')">Languages</button>
+
+		<button class="tablinks" onclick="open_main(event, 'software')">Software</button>
+
+		<button class="tablinks" onclick="open_main(event, 'cloud_platform')">Cloud Platform</button>
+
+	</div>
+
+	<div id="overview" class="tabcontent" style="display: block;">		
+		<h3>Overview<h3>
+	</div>
+
+	<div id="languages" class="tabcontent">		
+		
+		<div class="tab" style="background-color: #B9DFF8">
+
+		<button class="subtablinks" onclick="open_sub(event, 'r_programming')">R</button>
+		
+		<button class="subtablinks" onclick="open_sub(event, 'sql')">SQL</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'javascript')">JavaScript</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'html')">HTML</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'css')">CSS</button>
+
+	</div>
+
+				<div id="r_programming" class="subtabcontent">		
+					<p>Language with a focus on statistical data analysis.</p>
+				</div>
+
+				<div id="sql" class="subtabcontent">	
+					<p>Structured Query Language. Used to manage relational databases and extract data from them in an efficient manner. Optimal data storage
+ schemas/structures have similarities with the tidyverse concepts. Screenshot of databases demonstrating primary and foreign keys. Example of speed
+increase of dashbaord after correctly indexing fields.
+</p>
+				</div>
+
+				<div id="javascript" class="subtabcontent">	
+					<p>Controls interactivity in web pages. Example of some Javascript on page.</p>
+				</div>
+
+				<div id="html" class="subtabcontent">	
+					<p>Uses "tags" to create the objects that appear on web page. These objects make up the building blocks of web pages. Tags are structured in a hierarchy
+ using the "DIV" (division) tag.</p>
+				</div>
+
+				<div id="css" class="subtabcontent">	
+					<p>Creates rules that are then attached to HTML tags. These rules are used to control the appearance of the tags on the web page. Affecting things such as
+ colour, size and spacing. The CSS code can be imbedded directly into a web page within "STYLE" tags. Or more commonly stored in a seperate file which
+ the web page file will link to, called a CSS stylesheet. This allows the single file to set rules shared across multiple web pages.</p>
+				</div>
+
+
+	</div>
+
+	<div id="software" class="tabcontent">		
+
+		<div class="tab" style="background-color: #B9DFF8">
+
+		<button class="subtablinks" onclick="open_sub(event, 'google_analytics')">Google Analytics</button>
+		
+		<button class="subtablinks" onclick="open_sub(event, 'linux_ubuntu')">Linux Ubuntu</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'apache')">Apache HTTP</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'html')">Nginx</button>
+
+		<button class="subtablinks" onclick="open_sub(event, 'mysql')">MySQL</button>
+
+	</div>
+
+	<div id="cloud_platform" class="tabcontent">		
+		<h3>Cloud Platform<h3>
+	</div>
+
+	<script>
+		
+		function open_main(evt, tab_name) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tab_name).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		function open_sub(evt, subtab_name) {
+			var i, subtabcontent, subtablinks;
+			subtabcontent = document.getElementsByClassName("subtabcontent");
+			for (i = 0; i < subtabcontent.length; i++) {
+				subtabcontent[i].style.display = "none";
+			}
+			subtablinks = document.getElementsByClassName("subtablinks");
+			for (i = 0; i < subtablinks.length; i++) {
+				subtablinks[i].className = subtablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(subtab_name).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+	</script>
+
+
+
 </BODY>
 
 </HTML>

@@ -100,3 +100,41 @@ body {
 			margin-left: 5%;
 			text-align: left;
 		}
+
+		.tab {
+			overflow: hidden;
+			background-color: #85C5EE;
+			width: 70%;
+		}
+
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		.tab button:hover {
+			background-color: #ddd;
+		}
+
+		.tab button:active {
+			background-color: #ccc;
+		}
+
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			border-top: none;
+			width: 70%;
+		}
+
+		.subtabcontent {
+			display: none;
+			padding: 6px 12px;
+			border-top: none;
+			width: 100%;
+		}
