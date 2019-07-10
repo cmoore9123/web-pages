@@ -96,10 +96,46 @@ body {
 			content: '\2212';
 		}
 
+		.tab {
+			overflow: hidden;
+			background-color: #85C5EE;
+		}
+
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size: 17px;
+			margin: 5px;
+		}
+
+		.tab button:hover {
+			background-color: #ddd;
+		}
+
+		.tab button:active {
+			background-color: #ccc;
+		}
+
+		.tabcontent {
+			display: none;
+			border-top: none;
+			margin-top: 10px;
+
+		}
+
+		.subtabcontent {
+			display: none;
+			border-top: none;
+			background-color: white;
+		}
+
 		.main_column {
 			width: 85%;
 			background-color: #e6ffff;
 			margin: auto;
 			height: 100%;
-			margin-top: 5%;
+			margin-top: 2%;
 		}
