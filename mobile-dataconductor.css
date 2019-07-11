@@ -57,6 +57,7 @@ body {
 		.main_column {
 			width: 85%;
 			background-color: #e6ffff;
+			margin: auto;
 			height: 100%;
 			margin-top: 2%;
 		}
