@@ -2,8 +2,8 @@ body {
 			margin: 0;
 			font-family: Arial, Helvetica, sans-serif;
 			background-color: #454554;
-			/*background-color: #f3f1ff; */
 		}
+		
 		.header {
 			background-color: #333;
 			overflow: hidden;
@@ -133,9 +133,21 @@ body {
 		}
 
 		.main_column {
-			width: 75%;
-			background-color: #e6ffff;
+			width: 80%;
+			background-color: white;
 			margin-left: 10%;
-			height: 100%;
-			margin-top: 2%;
+			margin-top: 1%;
+		}
+
+		.container {
+			height: 60px;
+			display: flex;
+			align-items: center;
+			background-color: #333;
+		}
+
+		.container p {
+			margin-left: 20px;
+			color: #5DADE2;
+
 		}
