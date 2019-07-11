@@ -57,7 +57,6 @@ body {
 		.main_column {
 			width: 85%;
 			background-color: #e6ffff;
-			margin: auto;
 			height: 100%;
 			margin-top: 2%;
 		}
@@ -72,7 +71,12 @@ body {
 		.container p {
 			margin-left: 20px;
 			color: #5DADE2;
+			font-size: 20px;
 		}
+
+		iframe {
+    		min-width: 100%;
+  		}
 
 
 

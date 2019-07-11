@@ -3,7 +3,7 @@ body {
 			font-family: Arial, Helvetica, sans-serif;
 			background-color: #454554;
 		}
-		
+
 		.header {
 			background-color: #333;
 			overflow: hidden;
@@ -151,3 +151,7 @@ body {
 			color: #5DADE2;
 
 		}
+
+		 iframe {
+    		min-width: 100%;
+  		}
