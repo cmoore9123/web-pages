@@ -56,7 +56,6 @@ body {
 
 		.main_column {
 			width: 85%;
-			background-color: #e6ffff;
 			margin: auto;
 			height: 100%;
 			margin-top: 2%;
@@ -67,12 +66,14 @@ body {
 			display: flex;
 			align-items: center;
 			background-color: #333;
+			margin-top: 50px;
+
 		}
 
 		.container p {
 			margin-left: 20px;
 			color: #5DADE2;
-			font-size: 20px;
+			font-size: 24px;
 		}
 
 		iframe {
