@@ -78,15 +78,6 @@ body {
     		min-width: 100%;
   		}
 
-  		.footer {
-  			height: 150px;
-  			background-color: #333;
-  			margin-top: 70px;
-  			bottom: 0;
-  			position: absolute;
-  			width: 100%;
-
-  		}
 
   		.subtitle {
   			background-color: #E1E8EC;
