@@ -36,8 +36,8 @@
 					<a href="#wdivis">World Development Indicators Visualisation</a>
 					<a href="#wdimeta">World Development Indicators Meta Data</a>
 					<a href="#siteanalytics">Site Web Analytics</a>
+					<a href="#tech">Technology Used in this Site</a>
 					<a href="#resources">Resources</a>
-					<a href="#about">About</a>
 				</div>
 
 				<a href="javascript:void(0);" class="icon" onclick="menu_function()">
@@ -46,6 +46,12 @@
 			</div>		
 
 				<div class="main_column">
+
+					<div>
+						
+						<p>Welcome</p>
+
+					</div>
 
 					<div id="wdivis" class="container">
 
@@ -71,17 +77,65 @@
 
 					<iframe  src="https://datalair.co.uk/shiny/ga-dashboard" scrolling="no" frameborder="no"></iframe>
 
+					<div id="tech" class="container">
+						
+						<p>Technology Used in this Site</p>
+
+					</div>
+
+					<div class="subtitle">Overview</div>
+
+					<div class="tech_content">
+						Open Source
+					</div>
+
+					<div class="subtitle">R Language for Statistical Analysis</div>
+
+					<div class="tech_content">
+ 						Computer language with a focus on statistical data analysis. R was developed in the 90's from its predecessor "S" and since has grown and increased in popularity. Constantly gaining new functionalities through user contributed "packages" designed to assist in various tasks.
+						. tidyverse/tidydata
+						.leaflet
+						.sf
+						.shiny
+					</div>
+
+					<div class="subtitle">Relational Database Management Systems (RDBMS)</div>
+
+					<div class="tech_content">
+						 <p>Databases are the most efficient and reliable method of storing data. Data is stored in a hierarchical structure with a server at the top level. The server contains databases which in turn hold schemas within them, these schemas hold tables which are made up of fields.</p>
+						 <p>When tables have fields that contain values which are shared with other tables then these tables can be joined on those fields.</p>
+						 <p>Some of the most popular RDBM systems use today are Microsoft SQL Server, MySQL and Oracle Database. This site uses MySQL which is the most popular open source RDBMS.</p>
+					</div>
+
+					<div class="subtitle">Structured Query Language (SQL)</div>
+
+					<div class="tech_content">
+						  <p>SQL is the means by which to communicate with an RDBMS. Allowing the use to alter the structure of a database, input and extract data.</p>
+						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. A SQL query is made up of command words, variables and functions. Common command words include SELECT (used to tell the RDBMS you are wanting to extract data), FROM (which table the data is coming from), WHERE (applies filters to the results), GROUP BY (aggregates data which will then have functions applied to it), JOIN (many different types of joins exist, LEFT or INNER being appropriate in most cases)</p> 
+						  <p>Examples of variables would be table names and field names, these point to elements of the database's structure. </p>
+						  <p>Functions such as GETDATE() return values that are unrelated to the data stored in the database whereas other functions such as SUM() are applied to fields contained in the database and return a value dependent on the field. SUM() for example is used on data which has been aggregated and returns the total for the values in the field given to it.</p>
+						  <p>Each RDBMS has it own version of SQL. Microsoft SQL Server has T-SQL, MySQL's version is simply called MySQL and Oracle Database has PL/SQL. These are fundementally very similar to one another but differ slightly on syntax.</p>
+					</div>
+
+					<div class="subtitle">Google Analytics</div>
+
+					<div class="tech_content">
+						<p>Google Analytics is a free tool provided by Google used to monitor traffic on a website. This provides website owners insights into how a user interacts with their site. When this data is analysed properly it highlights areas of concern and opportunities for optimisation.</p>
+						<p>This is achieved through snippets of JavaScript embedded within a website that send user action data out to Google's servers.</p>
+						<p>The data is made up of Metrics and Dimensions. A metric would be something like a page view that can be counted. Or average time on page which can be assigned a specific numeric value. A dimension is something like a device type which has defined categories (mobile, desktop, tablet) that the metrics fall into. Metrics can be turned into dimension by bucketing them. So we could lets say have a dimension called timeOnPage which has categories of <1 minute and >1 minute</p>
+						<p>Google Analytics comes with hundreds of metrics and dimensions out of the box. But also gives the option to define custom metrics and dimensions as required. If for example you wanted to track how often a specific button on your site was clicked you could tag this button with some JavaScript code which </p>
+					</div>
+
+
+					
+
 					<div id="resources" class="container">
 						
 						<p>Resources</p>
 
 					</div>
 
-					<div id="about" class="container">
-						
-						<p>About</p>
-
-					</div>
+				
 
 				</div>
 
@@ -108,7 +162,6 @@
 			x.style.display = "block";
 		}
 	};
-
 
 
 	</script>
