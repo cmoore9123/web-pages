@@ -56,22 +56,22 @@ body {
 			margin: auto;
 			height: 100%;
 			margin-top: 2%;
-			padding-bottom: 150px;
+			padding-bottom: 50px;
 		}
 
 		.container {
-			height: 60px;
+			height: 40px;
 			display: flex;
 			align-items: center;
 			background-color: #333;
-			margin-top: 50px;
+			margin-top: 30px;
 
 		}
 
 		.container p {
 			margin-left: 20px;
 			color: #5DADE2;
-			font-size: 28px;
+			font-size: 26px;
 		}
 
 		iframe {
@@ -83,15 +83,14 @@ body {
   			background-color: #E1E8EC;
   			width: 100%;
   			text-align: center;
-  			font-size: 25px;
-  			margin-top: 20px;
-  			text-decoration: underline;
+  			font-size: 20px;
+  			margin-top: 15px;
   		}
 
   		.tech_content {
   			background-color: #E1E8EC;
   			text-align: left;
-  			padding: 50px;
+  			padding: 30px;
 
   		}
 
