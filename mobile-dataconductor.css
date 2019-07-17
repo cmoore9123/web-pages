@@ -102,11 +102,12 @@ body {
   			width: 100%;
   			text-align: center;
   			font-size: 14px;
-  			margin-top: 8px;
-  			padding-top: 5px;
+  			padding: 5px;
   			text-decoration: underline;
   			color: white;
   			outline: none;
+  			border: none;
+  			cursor: pointer;
 
   		}
 
@@ -115,12 +116,13 @@ body {
   		}
 
   		.tech_content {
+  			 display: none;
+  			overflow: hidden;
   			background-color: #E1E8EC;
   			text-align: left;
-  			padding: 20px;
+  			padding: 0 20px;
   			font-size: 12px;
-  			display: none;
-  			overflow: hidden;
+
 
   		}
 
