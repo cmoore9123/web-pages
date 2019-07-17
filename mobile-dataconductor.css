@@ -106,6 +106,8 @@ body {
   			padding-top: 5px;
   			text-decoration: underline;
   			color: white;
+  			outline: none;
+
   		}
 
   		.active, .subtitle:hover {
