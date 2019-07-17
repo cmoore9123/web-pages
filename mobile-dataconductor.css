@@ -79,7 +79,7 @@ body {
   		}
 
 
-  		.subtitle {
+  		/*.subtitle {
   			background-color: #E1E8EC;
   			width: 100%;
   			text-align: center;
@@ -94,6 +94,31 @@ body {
   			text-align: left;
   			padding: 20px;
   			font-size: 12px;
+
+  		}*/
+
+  		.subtitle {
+  			background-color: #777;
+  			width: 100%;
+  			text-align: center;
+  			font-size: 14px;
+  			margin-top: 8px;
+  			padding-top: 5px;
+  			text-decoration: underline;
+  			color: white;
+  		}
+
+  		.active, .subtitle:hover {
+  			background-color: #555;
+  		}
+
+  		.tech_content {
+  			background-color: #E1E8EC;
+  			text-align: left;
+  			padding: 20px;
+  			font-size: 12px;
+  			display: none;
+  			overflow: hidden;
 
   		}
 
