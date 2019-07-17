@@ -71,7 +71,7 @@ body {
 		.container p {
 			margin-left: 20px;
 			color: #5DADE2;
-			font-size: 11px;
+			font-size: 14px;
 		}
 
 		iframe {
@@ -98,13 +98,13 @@ body {
   		}*/
 
   		.subtitle {
-  			background-color: #777;
+  			background-color: #555;
   			width: 100%;
   			text-align: center;
-  			font-size: 14px;
+  			font-size: 13px;
   			padding: 5px;
   			text-decoration: underline;
-  			color: white;
+  			color: #8CD5FF;
   			outline: none;
   			border: none;
   			cursor: pointer;
@@ -112,7 +112,7 @@ body {
   		}
 
   		.active, .subtitle:hover {
-  			background-color: #555;
+  			background-color: #333;
   		}
 
   		.tech_content {
@@ -120,7 +120,7 @@ body {
   			overflow: hidden;
   			background-color: #E1E8EC;
   			text-align: left;
-  			padding: 0 20px;
+  			padding: 10 20px;
   			font-size: 12px;
 
 
