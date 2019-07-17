@@ -32,13 +32,13 @@
 
 		
 			<div class="topnav">
-				<a href="#home"><font color="#5DADE2" size="20px"><b>Data Conductor</b></font></a>
+				<a href="#home"><font color="#5DADE2" size="6px"><b>Data Conductor</b></font></a>
 
 				<div id="myLinks" class="#myLinks">
 					<a href="#wdivis">World Development Indicators Visualisation</a>
 					<a href="#wdimeta">World Development Indicators Meta Data</a>
 					<a href="#siteanalytics">Site Web Analytics</a>
-					<a href="#tech">Technology Used in this Site</a>
+					<a href="#tech">Technology</a>
 					<a href="#resources">Resources</a>
 				</div>
 
@@ -49,9 +49,9 @@
 
 				<div class="main_column">
 
-					<div>
+					<div style="font-size: 15px; color: #8CD5FF; width: 80%">
 						
-						<p>Welcome</p>
+						<p>Welcome to Dataconductor, I created this website to showcase the capabilities of modern open source software coupled with cloud based computing. The data for the World Development Indicator visualisation is sourced from the <a href="http://datatopics.worldbank.org/world-development-indicators/" style="color: white;">World Bank</a>'s site. An overview of the tech used in this site can be found in the technology section.</p>
 
 					</div>
 
@@ -81,21 +81,15 @@
 
 					<div id="tech" class="container">
 						
-						<p>Technology Used in this Site</p>
+						<p>Technology</p>
 
-					</div>
-
-					<div class="subtitle">Overview</div>
-
-					<div class="tech_content">
-						Open Source
 					</div>
 
 					<div class="subtitle">R Language for Statistical Analysis</div>
 
 					<div class="tech_content">
  						Computer language with a focus on statistical data analysis. R was developed in the 90's from its predecessor "S" and since has grown and increased in popularity. Constantly gaining new functionalities through user contributed <i>packages</i> designed to assist in various tasks.
-						. tidyverse/tidydata
+						. tidyverse/tidydata - Data rarely starts its existence in usable state. You'll need to process it into a form you can use. This is the realm of the <i>tidyverse</i>
 						.leaflet
 						.sf
 						.shiny
@@ -113,9 +107,7 @@
 
 					<div class="tech_content">
 						  <p><i>SQL</i> is the means by which to communicate with an RDBMS. Allowing the use to alter the structure of a database, input and extract data.</p>
-						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. A SQL query is made up of command words, variables and functions. Common command words include SELECT (used to tell the RDBMS you are wanting to extract data), FROM (which table the data is coming from), WHERE (applies filters to the results), GROUP BY (aggregates data which will then have functions applied to it), JOIN (many different types of joins exist, LEFT or INNER being appropriate in most cases)</p> 
-						  <p>Examples of variables would be table names and field names, these point to elements of the database's structure. </p>
-						  <p>Functions such as GETDATE() return values that are unrelated to the data stored in the database whereas other functions such as SUM() are applied to fields contained in the database and return a value dependent on the field. SUM() for example is used on data which has been aggregated and returns the total for the values in the field given to it.</p>
+						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. Here is an example of a query used in the World Development Index dashboard above</p> 
 						  <p>Each RDBMS has it own version of SQL. Microsoft SQL Server has T-SQL, MySQL's version is simply called MySQL and Oracle Database has PL/SQL. These are fundementally very similar to one another but differ slightly in their syntax.</p>
 					</div>
 
@@ -146,7 +138,27 @@
 					<div class="subtitle">Web Servers</div>
 
 					<div class="tech_content">
-						<p>This site makes use of both Nginx and Apache HTTP web servers for handling web traffic. With Nginx acting as a reverse proxy server for Apache. This configuration increases the security of the site, makes use of Nginx superior speed as a web server and provides load balancing functionality.</p>
+						<p>This site makes use of both Nginx and Apache HTTP web servers for handling web traffic. With Nginx acting as a <i>reverse proxy server</i> for Apache. This configuration increases the security of the site, makes use of Nginx superior speed as a web server and provides load balancing functionality.</p>
+					</div>
+
+					<div class="subtitle">JavaScript</div>
+
+					<div class="tech_content">
+						<p>JavaScript controls the interactive aspect of websites. Triggering events like a menu expanding when a button is clicked or redirecting a visitor to a different page based on a certain criteria. For example this site uses JavaScript to detect the pixel width of your device when you land on the home page. It will automatically send you to the mobile version of the site if this width is less than 800 pixels.</p> 
+					</div>
+
+					<div class="subtitle">HTML (Hypertext Markup Language)</div>
+
+					<div class="tech_content">
+						<p>Defines the objects from which web page are built using <i>tags</i>. These tags define the type of element you want to include. for example the tag for including a paragraph of text is p, the image tag is img. A block of HTML code begins with a tag contained within pointy brackets and ends with the tag contained within the pointy brackets again but proceeded with a forward slash. So the following code block inserts a paragraph into a webpage &ltp&gttext to show on page&lt/p&gt</p> <p>These tags are contained within each other to form a hierarchy. Tags used to display content are nearly always contained within a tag called div (standing for division). These divisions form the skeleton of the site.</p>
+					</div>
+
+					<div class="subtitle">CSS (Cascading Style Sheet)</div>
+
+					<div class="tech_content">
+						<p>Without CSS a web page would still display all of the content contained in its HTML tags but not in an appealing format. CSS Creates rules that are then attached to HTML tags. These rules are used to control the appearance of the tags on the web page. Affecting things such as
+ 						   colour, size and spacing. The CSS code can be imbedded directly into a web page within "STYLE" tags. Or more commonly stored in a seperate file which
+ 						   the web page file will link to, called a CSS stylesheet. This allows the single file to set rules shared across multiple web pages.</p>
 					</div>
 
 
