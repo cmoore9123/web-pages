@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142226942-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-142226942-2');
+</script>
+
+<TITLE>about</TITLE>
+
+<link rel="stylesheet" type="text/css" href="dataconductor.css">
+
+</HEAD>
+
+<BODY>
+	
+	<div class="header" id="myheader">
+				<align_right><a href="technology.html">Technology</a></align_right>				
+				<align_right class="active">Site Analytics</align_right>
+				<align_right><a href="index.html">Home</a></align_right>
+				<align_left><font color="#5DADE2"><b>Data Conductor</b></font></align_left>
+
+				
+			</div>
+
+
+		<div class="main_column">
+
+
+			<div id="siteanalytics" class="container">
+						
+						<p>Web Analytics for this Site</p>
+
+					</div>
+
+					<iframe  src="https://datalair.co.uk/shiny/ga-dashboard" scrolling="no" frameborder="no"></iframe> 
+
+	</div>
+
+
+
+	<div class="footer">
+
+	</div>
+
+<script>
+
+		window.onscroll = function() {myFunction()};
+	var header = document.getElementById("myheader");
+	var sticky = header.offsetTop;
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		};
+	};
+	
+	  iFrameResize({
+    heightCalculationMethod: 'taggedElement'
+  });
+
+</script>
+
+</BODY>
+
+</HTML>

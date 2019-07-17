@@ -1,8 +1,7 @@
 <HTML>
+
 <HEAD>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142226942-2"></script>
 <script>
@@ -10,82 +9,28 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-142226942-2');
-  gtag('config', 'UA-142226942-2', {
-  	'custom_map' : {'metric1' : 'dashboard_open'}
-  });
-  gtag('event', 'active_dropdown', {'dashboard_open' : 1});
-  gtag('event', 'active_dropdown', {'metric1' : 1});
 </script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
+<TITLE>about</TITLE>
 
+<link rel="stylesheet" type="text/css" href="dataconductor.css">
 
-	<TITLE>home page</TITLE>
+</HEAD>
 
-	<link rel="stylesheet" type="text/css" href="mobile-dataconductor.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	</HEAD>
+<BODY>
 	
-	<BODY>
+	<div class="header" id="myheader">
+				<align_right class="active">Technology</align_right>				
+				<align_right><a href="siteanalytics.html">Site Analytics</a></align_right>
+				<align_right><a href="index.html">Home</a></align_right>
+				<align_left><font color="#5DADE2"><b>Data Conductor</b></font></align_left>
 
-		
-			<div class="topnav">
-				<a href="#home"><font color="#5DADE2" size="6px"><b>Data Conductor</b></font></a>
+				
+			</div>
 
-				<div id="myLinks" class="#myLinks">
-					<a href="#wdivis">World Development Indicators Visualisation</a>
-					<a href="#wdimeta">World Development Indicators Meta Data</a>
-					<a href="#siteanalytics">Site Web Analytics</a>
-					<a href="#tech">Technology</a>
-					<a href="#contact">Contact</a>
-				</div>
+<div class="main_column">
 
-				<a href="javascript:void(0);" class="icon" onclick="menu_function()">
-					<i class="fa fa-bars fa-3x"></i>
-				</a>
-			</div>		
-
-				<div class="main_column">
-
-					<div style="font-size: 15px; color: #8CD5FF; width: 80%">
-						
-						<p>Welcome to Data Conductor, I created this website to showcase the capabilities of modern open source software coupled with cloud based computing. The data for the World Development Indicators visualisation is sourced from the <a href="http://datatopics.worldbank.org/world-development-indicators/" style="color: white;">World Bank</a>'s site. An overview of the tech used in this site can be found in the technology section.</p>
-
-					</div>
-
-					<div id="wdivis" class="container">
-
-			 			<p>World Development Indicators Visualisation</p>
-
-					</div>
-
-					<iframe src="https://datalair.co.uk/shiny/wdi-sql" scrolling="no" frameborder="no"></iframe>
-
-					<div id = "wdimeta" class="container">
-
-			 			<p>World Development Indicators Meta Data</p>
-
-					</div>
-
-					<iframe  src="https://datalair.co.uk/shiny/meta-data-dashboard" scrolling="no" frameborder="no"></iframe>
-
-					<div id="siteanalytics" class="container">
-						
-						<p>Web Analytics for this Site</p>
-
-					</div>
-
-					<iframe  src="https://datalair.co.uk/shiny/ga-dashboard" scrolling="no" frameborder="no"></iframe> 
-
-					<div id="tech" class="container">
-						
-						<p>Technology (tap to expand)</p>
-
-					</div>
-
-					<button class="subtitle">R Language for Statistical Analysis</button>
+	<button class="subtitle">R Language for Statistical Analysis</button>
 
 					<div class="tech_content">
  						Computer language with a focus on statistical data analysis. R was developed in the 90's from its predecessor "S" and since has grown and increased in popularity. Constantly gaining new functionalities through user contributed packages designed to assist in various tasks.
@@ -150,7 +95,7 @@
 					<button class="subtitle">Hypertext Markup Language (HTML))</button>
 
 					<div class="tech_content">
-						<p>Defines the objects from which web page are built using tags. These tags define the type of element you want to include. for example the tag for including a paragraph of text is p, the image tag is img. A block of HTML code begins with a tag contained within pointy brackets and ends with the tag contained within the pointy brackets again but proceeded with a forward slash. So the following code block inserts a paragraph into a webpage &ltp&gttext to show on page&lt/p&gt</p> <p>These tags are contained within each other to form a hierarchy. Tags used to display content are nearly always contained within a tag called div (standing for division). These divisions form the skeleton of the site.</p>
+						<p>Defines the objects from which web page are built using tags. These tags define the type of element you want to include. for example the tag for including a paragraph of text is p, the image tag is img. A block of HTML code begins with a tag contained within pointy brackets and ends with the tag contained within the pointy brackets again but proceeded with a forward slash. So the following code block inserts a paragraph into a webpage</p><p>&ltp&gttext to show on page&lt/p&gt</p><p>These tags are contained within each other to form a hierarchy. Tags used to display content are nearly always contained within a tag called div (standing for division). These divisions form the skeleton of the site.</p>
 					</div>
 
 					<button class="subtitle">Cascading Style Sheet (CSS)</button>
@@ -162,54 +107,17 @@
 					</div>
 
 
-					
 
-					<div id="contact" class="container">
-						
-						<p>Contact</p>
+	</div>
 
-					</div>
+	<div class="footer">
 
-				
+	</div>
 
-				</div>
 
-		
 
 	<script>
-		
-	window.onscroll = function() {myFunction()};
-	var header = document.getElementById("myheader");
-	var sticky = header.offsetTop;
-	function myFunction() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		};
-	};
 
-	function menu_function() {
-		var x = document.getElementById("myLinks");
-		if (x.style.display === "block") {
-			x.style.display = "none";
-		} else {
-			x.style.display = "block";
-		}
-	};
-
-
-	</script>
-
-	<script>
-		 iFrameResize({
-    	heightCalculationMethod: 'taggedElement'
-  	});
-
-</script>
-
-<script>
-	
 var coll = document.getElementsByClassName("subtitle");
 var i;
 
@@ -225,8 +133,20 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-</script>
+window.onscroll = function() {myFunction()};
+	var header = document.getElementById("myheader");
+	var sticky = header.offsetTop;
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		};
+	};
+	</script>
 
-	</BODY>
+
+
+</BODY>
 
 </HTML>
