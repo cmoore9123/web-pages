@@ -30,72 +30,79 @@
 
 <div class="main_column">
 
-	<button class="subtitle">R Language</button>
+	<button class="subtitle">The R Programming Language</button>
 
 					<div class="tech_content">
- 						<p>R is a programming language designed for data analysis. I use R as the central platform for my data analytics. For activities such as data manipulation, data visualisation, connecting to external databases and APIs, creating interactive dashboards, forecasting, data modelling and sheduling tasks.</p>
- 						<p>One of R's strengths is its wealth of extensions created by its highly active user community as well as the <a href="https://www.r-project.org/contributors.html">R Core Team</a> These extentions are known as packages and can be downloaded from <a href="https://cran.r-project.org/">CRAN</a> (Comprehensive R Archive Network).</p>
- 						<p>Below I've listed some of the packages used in this website along with an overview of their functions.</p>
+ 						<p>R is a programming language designed for data analysis, along with its Integrated Development Environment <a href="https://www.rstudio.com/">RStudio</a> it is well suited to form the central platform that ties together your data analytics. R is ideal for activities such as data manipulation, data visualisation, connecting to external databases and APIs, creating interactive dashboards, forecasting, data modelling and scheduling tasks.</p>
+ 						<p>One of R's strengths is its wealth of extensions created by its highly active user community as well as the <a href="https://www.r-project.org/contributors.html">R Core Team</a> These extensions are known as packages and can be downloaded from <a href="https://cran.r-project.org/">CRAN</a> (Comprehensive R Archive Network).</p>
+ 						<p>Below I've listed some of the packages used in this website along with an overview of their functions.</p><br>
  						<ul>
  							
  							<li>
 
- 								<p>tidyverse - The data to be used for analysis and reporting rarely arrives in a form suitable for your needs. It will need to be processed before you can continue. This is the realm of the <a href="https://www.tidyverse.org/">tidyverse</a>. The tidyverse isn't really a single package but a collection of packages designed to process data with the principles of <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> in mind.</p>
+ 								<p><b>tidyverse</b> - The data to be used for analysis and reporting rarely arrives in a form suitable for your needs. It will need to be processed before you can continue. This is the realm of the <a href="https://www.tidyverse.org/">tidyverse</a>. The tidyverse isn't actually a single package but a collection of packages designed to process data with the principles of <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> in mind.</p>
 
- 							</li>
-
- 							<li>
- 								
- 								<p>ggplot2 - The most favoured package for graphing in R. The "gg" in its name stands for Grammar of Graphics, referring to its conventions of translating the code text you give it into visuals. These visuals are layered on top of each other to create highly customisable graphs.</p>
- 								<p>ggplot2 is actually part of the tidyverse but being the primary package for graphing earns it a seperate mention.</p>
-
- 							</li>
+ 							</li><br>
 
  							<li>
  								
- 								<p>shiny - The package used for building interactive web applications in R. The dashboards you see on this site are built in shiny along with the package shinydashboard which provides additional functionalities helpful in dashboard design.</p>
- 								<p> Shiny web apps consist of two parts. There is a user interface (UI) which defines the client side aspect of the app, what the user sees and interacts with. R translates a UI script written in R into a combination of HTML, JavaScript and CSS to create this.</p>
+ 								<p><b>ggplot2</b> - A favourite package for graphing in R. The "gg" in its name stands for <a href="https://codewords.recurse.com/issues/six/telling-stories-with-data-using-the-grammar-of-graphics">Grammar of Graphics</a>, referring to its conventions of translating textual instructions into visuals. These visuals are layered on top of each other to create highly customisable graphs.</p>
+ 								<p>ggplot2 is actually part of the tidyverse but being the primary package for graphing gives it a separate mention.</p>
+
+ 							</li><br>
+
+ 							<li>
+ 								
+ 								<p><b>shiny</b> - The package used for building <a href="https://shiny.rstudio.com/gallery/">interactive web applications</a> in R. The dashboards you see on this site are built in shiny along with the package <a href="https://rstudio.github.io/shinydashboard/">shinydashboard</a> which provides additional functionalities helpful in dashboard design.</p>
+ 								<p> Shiny web apps consist of two parts. There is a user interface (UI) which defines the client side aspect of the app, what the user sees and interacts with. R translates a UI script written in R into a combination of <a href="html">HTML</a>, <a href="#javascript">JavaScript</a> and <a href="#css">CSS</a> to create this.</p>
  								<p>Then there is the server side. This does the work behind the scenes to create the app. Pulling in data, processing the data and rendering the outputs of the app.</p>
  								<p>The server script and UI communicate with each other through common variables. As an example, when you select an indicator in the World Development Indicators dashboard your selection is stored as the input variable indicator_selection and passed to the server script. The server script takes this variable and creates a new request to pull this specific indicator's data from the database. This data is processed in the server script and used to render the geographical visualisation that is in turn passed back to the UI to be displayed</p>
 
- 							</li>
+ 							</li><br>
 
  							<li>
  								
- 								<p>DBI - Provides an interface to databases. Used in conjuction with packages such as RMySQL which provide the drivers for specific Relational Database Management Systems</p>
+ 								<p><b>DBI</b> - Provides an interface to databases. Used in conjunction with packages such as RMySQL which provide the drivers for specific <a href="#rdbms"> Relational Database Management Systems</a></p>
 
- 							</li>
-
- 							<li>
- 								
- 								<p>googleAnalyticsR - A package used to interact with the Google Analytics API. Allows data from your Google Analytics account to be seamlessly integrated into your wider reporting.</p>
-
- 							</li>
+ 							</li><br>
 
  							<li>
  								
- 								<p>sf and sp - sf stands for Simple Features and sp is short for spatial. Two packages for handling GIS (Geospatial Information Systems) data in R</p>
+ 								<p><b>googleAnalyticsR</b> - A package used to interact with the <a href="https://marketingplatform.google.com/intl/en_uk/about/analytics/">Google Analytics</a> API. Allows data from your Google Analytics account to be seamlessly integrated into your wider reporting.</p>
+
+ 							</li><br>
+
+ 							<li>
+ 								
+ 								<p><b>sf and sp</b> - sf stands for Simple Features and sp is short for spatial. Two packages for handling GIS (Geospatial Information Systems) data in R</p>
  								<p>GIS data has many uses but requires special treatment compared to other families of data. These packages provide the tools to do so.</p>
  								<p>The World Development Indicators dashboard uses these packages to assign the countries contained in the World Bank data with their own geospatial polygons which are then mapped to the globe.</p>
 
- 							</li>
+ 							</li><br>
 
  							<li>
  								
- 								<p>leaflet - While the sf and sp packages include functionalities for mapping GIS data the leaflet package takes this a step further. Providing interactivity within the maps.</p>
+ 								<p><b>leaflet</b> - While the sf and sp packages include functionalities for mapping GIS data the leaflet package takes this a step further. Providing interactivity within the maps.</p>
+ 								<p>The leaflet package in R runs on the <a href="https://leafletjs.com/">JavaScript leaflet library</a>. </p>
 
- 							</li>
+ 							</li><br>
+
+ 							<li>
+ 								
+ 								<p><b>taskscheduleR and cronR</b> - These packages allow you to automate the running of your scripts. taskscheduleR for Windows operating systems and cronR for Linux.</p> <p>If you have a task that follows a defined process and needs to be performed on a regular basis - daily, weekly, monthly, whatever - you can write a script in R to achieve this and schedule that script to run automatically. Freeing up your time to do work that can't be done by automated scripts.</p>
+
+ 							</li> <br>
 
  						</ul>
 
 					</div>
 
-					<button class="subtitle">Relational Database Management Systems (RDBMS)</button>
+					<button id="rdbms" class="subtitle">Relational Database Management Systems (RDBMS)</button>
 
 					<div class="tech_content">
-						 <p>Databases are the most efficient and reliable method of storing data. Data is stored in a hierarchical structure with a server at the top level. The server contains databases which in turn hold schemas within them, these schemas hold tables which are made up of fields.</p>
+						 <p>Databases are the most efficient and reliable method of storing data. Data is stored in a hierarchical structure with a server at the top level. The server contains databases which in turn hold schema within them, these schema hold tables which are made up of fields.</p>
 						 <p>When tables have fields that contain values which are shared with other tables then these tables can be joined on those fields.</p>
-						 <p>Some of the most popular RDBM systems use today are Microsoft SQL Server, MySQL and Oracle Database. This site uses MySQL which is the most popular open source RDBMS.</p>
+						 <p>Some of the most popular RDBM systems use today are <a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a>, <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> and <a href="https://en.wikipedia.org/wiki/Oracle_Database">Oracle Database</a>. This site uses MySQL which is the most popular open source RDBMS.</p>
 					</div>
 
 					<button class="subtitle">Structured Query Language (SQL)</button>
@@ -103,7 +110,7 @@
 					<div class="tech_content">
 						  <p>SQL is the means by which to communicate with an RDBMS. Allowing the use to alter the structure of a database, input and extract data.</p>
 						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. Here is an example of a query used in the World Development Index dashboard above</p> 
-						  <p>Each RDBMS has it own version of SQL. Microsoft SQL Server has T-SQL, MySQL's version is simply called MySQL and Oracle Database has PL/SQL. These are fundementally very similar to one another but differ slightly in their syntax.</p>
+						  <p>Each RDBMS has it own version of SQL. Microsoft SQL Server has T-SQL, MySQL's version is simply called MySQL and Oracle Database has PL/SQL. These are fundamentally very similar to one another but differ slightly in their syntax.</p>
 					</div>
 
 					<button class="subtitle">Google Analytics</button>
@@ -119,7 +126,7 @@
 					<button class="subtitle">Cloud Computing</button>
 
 					<div class="tech_content">
-						<p>This site, the apps contained within it and the data the apps run from are all hosted in the "Cloud" through the provider <a href="https://www.digitalocean.com/"> DigitalOcean</a>. With 2GB RAM and 50GB disk space costing $10 per month to rent. This $10 per month makes up the entirity of the expense of this site.</p>
+						<p>This site, the apps contained within it and the data the apps run from are all hosted in the "Cloud" through the provider <a href="https://www.digitalocean.com/"> DigitalOcean</a>. With 2GB RAM and 50GB disk space costing $10 per month to rent. This $10 per month makes up the entirety of the expense of this site.</p>
 						<p>Hosting in this manner provides many benefits. Such as security, flexibility, scalability and price. There is no on-premise hardware that needs to be protected and maintained. If your cloud machine ever needs more RAM or disk space you can simply up the resources of your machine from your account in a process that takes less than a minute.</p>
 						<p>Many businesses are moving their IT infrastructure to the cloud for these reasons.</p>
 					</div>
@@ -136,23 +143,23 @@
 						<p>This site makes use of both Nginx and Apache HTTP web servers for handling web traffic. With Nginx acting as a reverse proxy server for Apache. This configuration increases the security of the site, makes use of Nginx superior speed as a web server and provides load balancing functionality.</p>
 					</div>
 
-					<button class="subtitle">JavaScript</button>
+					<button id="javascript" class="subtitle">JavaScript</button>
 
 					<div class="tech_content">
 						<p>JavaScript controls the interactive aspect of websites. Triggering events like a menu expanding when a button is clicked or redirecting a visitor to a different page based on a certain criteria. For example this site uses JavaScript to detect the pixel width of your device when you land on the home page. It will automatically send you to the mobile version of the site if this width is less than 800 pixels.</p> 
 					</div>
 
-					<button class="subtitle">Hypertext Markup Language (HTML))</button>
+					<button id="html" class="subtitle">Hypertext Markup Language (HTML))</button>
 
 					<div class="tech_content">
 						<p>Defines the objects from which web page are built using tags. These tags define the type of element you want to include. for example the tag for including a paragraph of text is p, the image tag is img. A block of HTML code begins with a tag contained within pointy brackets and ends with the tag contained within the pointy brackets again but proceeded with a forward slash. So the following code block inserts a paragraph into a webpage</p><p>&ltp&gttext to show on page&lt/p&gt</p><p>These tags are contained within each other to form a hierarchy. Tags used to display content are nearly always contained within a tag called div (standing for division). These divisions form the skeleton of the site.</p>
 					</div>
 
-					<button class="subtitle">Cascading Style Sheet (CSS)</button>
+					<button id="css" class="subtitle">Cascading Style Sheet (CSS)</button>
 
 					<div class="tech_content">
 						<p>Without CSS a web page would still display all of the content contained in its HTML tags but not in an appealing format. CSS Creates rules that are then attached to HTML tags. These rules are used to control the appearance of the tags on the web page. Affecting things such as
- 						   colour, size and spacing. The CSS code can be imbedded directly into a web page within "STYLE" tags. Or more commonly stored in a seperate file which
+ 						   colour, size and spacing. The CSS code can be embedded directly into a web page within "STYLE" tags. Or more commonly stored in a separate file which
  						   the web page file will link to, called a CSS stylesheet. This allows the single file to set rules shared across multiple web pages.</p>
 					</div>
 

@@ -104,8 +104,11 @@ body {
   			text-align: left;
   			padding: 10 20px;
   			font-size: 12px;
+  		}
 
-
+  		.tech_content a {
+  			text-decoration: none;
+  			color: #c41454;
   		}
 
 

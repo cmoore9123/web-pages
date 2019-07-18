@@ -171,8 +171,11 @@ body {
   			text-align: left;
   			padding: 20 20%;
   			font-size: 16px;
+  		}
 
-
+  		.tech_content a {
+  			text-decoration: none;
+  			color: #c41454;
   		}
 
   		.footer {
