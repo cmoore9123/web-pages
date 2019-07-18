@@ -11,7 +11,7 @@
   gtag('config', 'UA-142226942-2');
 </script>
 
-<TITLE>about</TITLE>
+<TITLE>technology</TITLE>
 
 <link rel="stylesheet" type="text/css" href="dataconductor.css">
 
@@ -30,14 +30,64 @@
 
 <div class="main_column">
 
-	<button class="subtitle">R Language for Statistical Analysis</button>
+	<button class="subtitle">R Language</button>
 
 					<div class="tech_content">
- 						Computer language with a focus on statistical data analysis. R was developed in the 90's from its predecessor "S" and since has grown and increased in popularity. Constantly gaining new functionalities through user contributed packages designed to assist in various tasks.
-						. tidyverse/tidydata - Data rarely starts its existence in usable state. You'll need to process it into a form you can use. This is the realm of the <i>tidyverse</i>
-						.leaflet
-						.sf
-						.shiny
+ 						<p>R is a programming language designed for data analysis. I use R as the central platform for my data analytics. For activities such as data manipulation, data visualisation, connecting to external databases and APIs, creating interactive dashboards, forecasting, data modelling and sheduling tasks.</p>
+ 						<p>One of R's strengths is its wealth of extensions created by its highly active user community as well as the <a href="https://www.r-project.org/contributors.html">R Core Team</a> These extentions are known as packages and can be downloaded from <a href="https://cran.r-project.org/">CRAN</a> (Comprehensive R Archive Network).</p>
+ 						<p>Below I've listed some of the packages used in this website along with an overview of their functions.</p>
+ 						<ul>
+ 							
+ 							<li>
+
+ 								<p>tidyverse - The data to be used for analysis and reporting rarely arrives in a form suitable for your needs. It will need to be processed before you can continue. This is the realm of the <a href="https://www.tidyverse.org/">tidyverse</a>. The tidyverse isn't really a single package but a collection of packages designed to process data with the principles of <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> in mind.</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>ggplot2 - The most favoured package for graphing in R. The "gg" in its name stands for Grammar of Graphics, referring to its conventions of translating the code text you give it into visuals. These visuals are layered on top of each other to create highly customisable graphs.</p>
+ 								<p>ggplot2 is actually part of the tidyverse but being the primary package for graphing earns it a seperate mention.</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>shiny - The package used for building interactive web applications in R. The dashboards you see on this site are built in shiny along with the package shinydashboard which provides additional functionalities helpful in dashboard design.</p>
+ 								<p> Shiny web apps consist of two parts. There is a user interface (UI) which defines the client side aspect of the app, what the user sees and interacts with. R translates a UI script written in R into a combination of HTML, JavaScript and CSS to create this.</p>
+ 								<p>Then there is the server side. This does the work behind the scenes to create the app. Pulling in data, processing the data and rendering the outputs of the app.</p>
+ 								<p>The server script and UI communicate with each other through common variables. As an example, when you select an indicator in the World Development Indicators dashboard your selection is stored as the input variable indicator_selection and passed to the server script. The server script takes this variable and creates a new request to pull this specific indicator's data from the database. This data is processed in the server script and used to render the geographical visualisation that is in turn passed back to the UI to be displayed</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>DBI - Provides an interface to databases. Used in conjuction with packages such as RMySQL which provide the drivers for specific Relational Database Management Systems</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>googleAnalyticsR - A package used to interact with the Google Analytics API. Allows data from your Google Analytics account to be seamlessly integrated into your wider reporting.</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>sf and sp - sf stands for Simple Features and sp is short for spatial. Two packages for handling GIS (Geospatial Information Systems) data in R</p>
+ 								<p>GIS data has many uses but requires special treatment compared to other families of data. These packages provide the tools to do so.</p>
+ 								<p>The World Development Indicators dashboard uses these packages to assign the countries contained in the World Bank data with their own geospatial polygons which are then mapped to the globe.</p>
+
+ 							</li>
+
+ 							<li>
+ 								
+ 								<p>leaflet - While the sf and sp packages include functionalities for mapping GIS data the leaflet package takes this a step further. Providing interactivity within the maps.</p>
+
+ 							</li>
+
+ 						</ul>
+
 					</div>
 
 					<button class="subtitle">Relational Database Management Systems (RDBMS)</button>
