@@ -2,65 +2,51 @@
 
 <HEAD>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142226942-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-142226942-2');
+
 </script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
 
-<TITLE>site analytics</TITLE>
+<TITLE>routing app</TITLE>
 
 <link rel="stylesheet" type="text/css" href="dataconductor.css">
 
-</HEAD>
+</HEAD>	
 
 <BODY>
 	
 	<div class="header" id="myheader">	
 				<align_right><a href="https://www.linkedin.com/in/cameron-moore-a50b2b189/">My LinkedIn</a></align_right>				
-				<align_right class="active">Site Analytics</align_right>
-				<align_right><a href="routing-app.html">Routing App</a></align_right>
+				<align_right><a href="siteanalytics.html">Site Analytics</a></align_right>
+			    <align_right class="active">Routing App</align_right>
 				<align_right><a href="technology.html">Technology</a></align_right>
 				<align_right><a href="index.html">Home</a></align_right>
 				<align_left><font color="#5DADE2"><b>Data Conductor</b></font></align_left>
-
 				
-			</div>
+	</div>
 
+	<div class="main_column">
+		
+		<div id="routing-app" class="container">
 
-		<div class="main_column">
+			<p>Routing App</p>
 
+		</div>
 
-			<div style="font-size: 17px; color: #8CD5FF; width: 66%">
-						
-						<p>This page displays the Google Analytics data for this site. Choose a date range for the data, the metrics to be measured and the dimensions to group the data by.</p>
-						<p>The data is pretty sparse as this site gets very little traffic, for the time being at least.</p>
-
-			</div>
-
-
-			<div id="siteanalytics" class="container">
-						
-						<p>Web Analytics for this Site</p>
-
-					</div>
-
-					<iframe  src="https://datalair.co.uk/shiny/ga-dashboard" scrolling="no" frameborder="no"></iframe> 
+		<iframe src="https://dataconductor.co.uk/shiny/routing-app" scrolling="no" frameborder="no"></iframe>
 
 	</div>
 
+	<div class="footer"> </div>
 
-
-	<div class="footer">
-
-	</div>
-
-<script>
+	<script>
 
 		window.onscroll = function() {myFunction()};
 	var header = document.getElementById("myheader");
