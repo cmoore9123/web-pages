@@ -111,22 +111,23 @@
 
 					<div class="tech_content">
 						  <p>SQL is the means by which to communicate with an RDBMS. Allowing the use to alter the structure of a database, input and extract data.</p>
-						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. Here is an example of a query used in the World Development Index dashboard above.</p> 
-						  <p>SELECT 
-                                         c.ISO_code,
-                                         c.`Short.Name`,
-                                         i.`Indicator.Name`,
-                                         i.order_transform_label,
-                                         i.prefix,
-                                         i.suffix,
-                                         v.year,
-                                         (v.indicator_value * i.order_transform_number) As indicator_value
-                                         FROM
-                                         WDI_Yearly_Values v
-                                         INNER JOIN WDI_Countries c ON c.id = v.country_id
-                                         INNER JOIN WDI_Indicators i ON i.id = v.indicator_id
-                                         WHERE i.`Indicator.Name` = 'GDP (current US$)' 
-                                         AND v.year = 2017</p>
+						  <p>The most frequent action in the world of data analytics is extracting data, known as querying. Here is an example of a query used in the World Development Index dashboard from the home page.</p> 
+						  <pre><code>	 
+		SELECT 
+                c.ISO_code,
+                c.`Short.Name`,
+                i.`Indicator.Name`,
+                i.order_transform_label,
+                i.prefix,
+                i.suffix,
+                v.year,
+                (v.indicator_value * i.order_transform_number) As indicator_value
+                FROM WDI_Yearly_Values v
+                INNER JOIN WDI_Countries c ON c.id = v.country_id
+                INNER JOIN WDI_Indicators i ON i.id = v.indicator_id
+                WHERE i.`Indicator.Name` = 'GDP (current US$)' 
+                AND v.year = 2017
+                                </code></pre>
 						  <p>Each RDBMS has it own version of SQL. Microsoft SQL Server has T-SQL, MySQL's version is simply called MySQL and Oracle Database has PL/SQL. These are fundamentally very similar to one another but differ slightly in their syntax.</p>
 					</div>
 
